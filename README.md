@@ -1,52 +1,51 @@
-# Welcome to Microsoft AirSim, a frork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5 by [Colosseum](https://github.com/CodexLabsLLC/Colosseum)
-  
-## Build Status
-[![Ubuntu Build](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test_ubuntu.yml/badge.svg)](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test_ubuntu.yml)
-[![MacOS Build](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test_macos.yml/badge.svg)](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test_macos.yml)
-[![Windows Build](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test_windows.yml/badge.svg)](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test_windows.yml)
+# Welcome to SOAR (Simulated Operations for Aerial Research)
 
-[![](https://dcbadge.vercel.app/api/server/y9ZJKKKn8J)](https://discord.gg/y9ZJKKKn8J)
-  
-## Looking for more performance?
-The company managing this repo created the SWARM Developer System to help build, simulate and deploy single and
-multi-agent autonomous systems. Check it out here: [SWARM Developer System](https://www.swarmsim.io/overview/developer)
-  
-## IMPORTANT ANNOUNCEMENT
-Moving forward, we are now using Unreal Engine 5 version 5.3.2 or greater! If you
-want to use UE4.27, you can use original [AirSim](https://github.com/microsoft/AirSim).
-  
-## Unreal Engine Version for Main Branch
-The main branch of this repository **only** supports Unreal Engine 5.3 for now!
-  
+SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5 by [Colosseum](https://github.com/CodexLabsLLC/Colosseum), developed for research purposes at the Raspet Flight Research Laboratory.
+
+## Build Status
+
+[![Windows Build](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test\_windows.yml/badge.svg)](https://github.com/OpenSourceVideoGames/AirSim/actions/workflows/test\_windows.yml)
+
+## Unreal Engine Version
+
+SOAR uses Unreal Engine 5.3.2 or greater.
+
 ## Currently Supported Operating Systems
-Below are the list of officially supported Operating Systems, with full Unreal Engine support:
+
+SOAR currently supports the following operating system:
+
 ### Windows
+
 - Windows 11 (Latest)
 
-### Linux
-- ~~Ubuntu 18.04~~ (NO LONGER SUPPORTED. 18.04 is EOL so we will not be checking this anymore and GitHub doesn't support CI builds)
-- Ubuntu 20.04
-  
-**NOTE** Ubuntu 22.04 is not currently supported due to Vulkan support. If this changes, we will notify you here. If you want to use Colosseum on 22.04, we highly recommend that you use Docker.
-
-### MacOS (Non-M1 Macs only)
-- MacOS Monterey (12)
-- MacOS (11)
-  
-**NOTE** MacOS support is highly experimental and may be dropped in future releases. This is because Apple continually changes their build tools and doesn't like 3rd party developers in general. There are ongoing discussions to remove this support.
-  
 ## Introduction
-  
-Colosseum is a simulator for robotic, autonomous systems, built on [Unreal Engine](https://www.unrealengine.com/) (we now also have an experimental [Unity](https://unity3d.com/) release). It is open-source, cross platform, and supports software-in-the-loop simulation with popular flight controllers such as PX4 & ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment. Similarly, we have an experimental release for a Unity plugin.
-  
-This is a fork of the AirSim repository, which Microsoft decided to shutdown in July of 2022. This fork serves as a waypoint to building a new and better simulation platform. The creater and maintainer of this fork is Codex Laboratories LLC (our website is [here](https://www.codex-labs-llc.com)). Colosseum is one of the underlying simulation systems that we use in our product, the [SWARM Simulation Platform](https://www.swarmsim.io). This platform exists to provide pre-built tools and low-code/no-code autonomy solutions. Please feel free to check this platform out and reach out if interested.
 
-## Join the Community
-We have decided to create a Discord channel to better allow for community engagement. Join here: [Colosseum Robotics Discord](https://discord.gg/y9ZJKKKn8J).
-  
+SOAR is a simulator for aerial research, built on [Unreal Engine](https://www.unrealengine.com/). It is open-source and supports software-in-the-loop simulation with popular flight controllers such as PX4 & ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment.
+
+This simulator is a fork of the AirSim repository, tailored specifically for research purposes at the Raspet Flight Research Laboratory. The main focus of SOAR is to provide a platform for investigating the effects of different Detect and Avoid (DAA) displays on pilots in a multiplayer flight simulator environment.
+
+## Research Background
+
+The research project behind SOAR aims to build upon the work done by Friedman-Berg et al. (2014) in their paper "Minimum Visual Information Requirements For Detect and Avoid in Unmanned Aircraft Systems." The authors conducted a human-in-the-loop simulation to determine the minimum visual information requirements for an effective DAA system in Unmanned Aircraft Systems (UAS). They identified the "Prediction" display configuration as the minimum required for successful DAA performance.
+
+SOAR seeks to expand on this research by:
+
+1. Finalizing and testing multiple variations of DAA displays, including the "Prediction" configuration and additional designs with more features and potential clutter.
+2. Building a Primary Flight Display (PFD) window with elements such as airspeed, altitude, pitch, roll, yaw, gravity, and grid.
+3. Implementing a First-Person View (FPV) window and adding a fixed-wing UAV to the simulator.
+4. Integrating a Cesium World Map into the Unreal Engine project for enhanced realism.
+5. Developing a settings menu to allow users to set flight mode and select aircraft models.
+6. Creating a Test Director GUI for setting UI display type, encounter type, and other parameters.
+
+By focusing on these aspects, SOAR aims to provide a comprehensive platform for evaluating the effectiveness of different DAA displays and their impact on pilot performance in a multiplayer flight simulator environment.
+
+## Contact Information
+
+For any questions or comments regarding SOAR, please contact:
+
+- Email: bswann@raspet.mssstate.edu
+- GitHub: @mr.stealyocurls
 
 ## License
 
 This project is released under the MIT License. Please review the [License file](LICENSE) for more details.
-
-

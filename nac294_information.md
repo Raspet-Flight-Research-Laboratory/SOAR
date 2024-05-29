@@ -1,9 +1,9 @@
 ############################################################################################################################################
-* (05/22/2024) *
+# * (05/22/2024) *
 
-# Created a copy of AirSim, AirSim v5.3.2, and Colosseum to maintain their current state as a backup.
+## Created a copy of AirSim, AirSim v5.3.2, and Colosseum to maintain their current state as a backup.
 
-# Updated C:/Users/RFRL/Documents/AirSim/setting.json to remove the prompt to start the AirSim simulation as a car. 
+## Updated C:/Users/RFRL/Documents/AirSim/setting.json to remove the prompt to start the AirSim simulation as a car. 
 
 
 ############################################################################################################################################
@@ -73,3 +73,13 @@ NOTE: USE THIS TUTORIAL FOR SETTING UP AND/OR STARTING CESIUM https://www.youtub
 # * (05/29/2024) *
 
 ## Began studying Unreal so that we can implement SOAR's multi-window structure more efficiently.
+
+## Found a few paid plugins for multi-window rendering.
+
+## Started work on syncing QGC coordinates and Unreal Cesium coordinates.
+
+## Set the starting position of the AirSim drone to the parking lot of Raspet II.
+
+## Installed Notepad++ to act as a superior file editor of sorts.
+
+## Removed all traces of helloCar from the AirSim.sln.

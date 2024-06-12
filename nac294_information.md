@@ -88,10 +88,34 @@ NOTE: USE [THIS TUTORIAL](https://www.youtube.com/watch?v=Eib5YmHieuk) FOR SETTI
 ---
 # * (06/04/2024) *
 
-** Researched Multi-window plugins for Unreal engine. We should probably choose [this one.](https://www.unrealengine.com/marketplace/en-US/product/multi-window-extension)**
+** Researched Multi-window plugins for Unreal engine. We should probably choose [this one.](https://www.unrealengine.com/marketplace/en-US/product/multi-window-extension) **
 
 ** Adjusted start_sim.cmd to utilize the previously unknown WSL static IP. **
 
 ** Wrote some LISP scripts that may help in the future. **
+
+
+---
+# * (06/05/2024) *
+
+** Began (once again) trying to figure out how to sync the location data between PX4/QGC and cesium in Unreal. **
+
+** Began trying to fix the communication issues between PX4, QGC, and AirSim. **
+
+NOTE: SOMETIMES PX4 WILL THROW A (px4 server already running for instance 0) ERROR. RESTARTING THE PC WILL FIX THIS.
+
+NOTE: IF THE QGC SCREEN STARTS GLITCHING IT IS A WSL ISSUE, NOT A QGC ISSUE. SEE [THIS LINK](https://github.com/microsoft/wslg/issues/1148) FOR A DISCUSSION OF A SIMILAR PROBLEM. Also, launching QGC then closing it with Ctrl + c seems to fix the issue sometimes.
+
+** Installed and configured Ardupilot to replace PX4 **
+
+** The start up cmd files are currently not working. **
+
+** As of today, Unreal is not loading with the current settings.json. **
+
+
+---
+# * (06/12/2024) *
+
+** Started working on connecting Ardupilot and AirSim. (Much harder than it sounds.)
 
 ---

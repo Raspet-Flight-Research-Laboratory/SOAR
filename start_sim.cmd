@@ -8,7 +8,7 @@ goto :start_px4
 
 rem Define a function to launch PX4 Autopilot
 :start_px4
-start Ubuntu -c "cd ~/PX4-Autopilot && export PX4_SIM_HOST_ADDR="172.29.192.1" && echo "Exporting WSL IP: %ip%" && make px4_sitl_default none_iris; exec bash"
+start Ubuntu -c "cd ~/ardupilot && ~/ardupilot/Tools/autotest/sim_vehicle.py -v ArduCopter -f airsim-copter --console --map --sim-address=172.29.192.1; exec bash"
 goto :start_qgc
 
 

@@ -116,6 +116,9 @@ NOTE: IF THE QGC SCREEN STARTS GLITCHING IT IS A WSL ISSUE, NOT A QGC ISSUE. SEE
 ---
 # * (06/12/2024) *
 
-** Started working on connecting Ardupilot and AirSim. (Much harder than it sounds.)
+** Started working on connecting Ardupilot and AirSim. (Much harder than it sounds.) **
 
+** Updated Unreal .gitignore to allow Blocks.uproject to the github. **
+
+** THERE ARE NOW TWO START UP SCRIPTS. One scripts starts AirSim with PX4, the other starts AirSim with Ardupilot. **
 ---

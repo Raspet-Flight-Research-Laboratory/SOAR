@@ -106,7 +106,7 @@ NOTE: SOMETIMES PX4 WILL THROW A (px4 server already running for instance 0) ERR
 
 NOTE: IF THE QGC SCREEN STARTS GLITCHING IT IS A WSL ISSUE, NOT A QGC ISSUE. SEE [THIS LINK](https://github.com/microsoft/wslg/issues/1148) FOR A DISCUSSION OF A SIMILAR PROBLEM. Also, launching QGC then closing it with Ctrl + c seems to fix the issue sometimes.
 
-** Installed and configured Ardupilot to replace PX4 **
+** Installed and configured Ardupilot to replace PX4. **
 
 ** The start up cmd files are currently not working. **
 
@@ -120,5 +120,43 @@ NOTE: IF THE QGC SCREEN STARTS GLITCHING IT IS A WSL ISSUE, NOT A QGC ISSUE. SEE
 
 ** Updated Unreal .gitignore to allow Blocks.uproject to the github. **
 
+** Brady provided a new battery for the X9D, it is working now. **
+
+** Began attempting to connect the Taranis to QGC. **
+
 ** THERE ARE NOW TWO START UP SCRIPTS. One scripts starts AirSim with PX4, the other starts AirSim with Ardupilot. **
+
+
+---
+# * (06/13/2024) *
+
+** Fixed this issue where QGC would never reach the "Ready to fly" state, thanks to Matthew. **
+
+** The flight plan upload system between QGC and PX4 is still broken. Working on that as of now. **
+
+** Still broken, I think it might be related to the fact that we are trying to fly without a radio. **
+
+** Installed usbipd for the purpose of sharing the Taranis connection with WSL **
+
+** I was able to sucessfully connect the Taranis to WSL, but QGC still does not recognize it. **
+
+
+---
+# * (06/14/2024) *
+
+** Forced Windows to connect the Logitech controller to WSL, Windows cannot use this controller until it is unbound.
+NOTE: SEE usbipd /? for help. **
+
+
+---
+# * (06/18/2024) *
+
+** Downloaded process explorer **
+
+** Sucessfully connected the logitech controller to QGC (I think) this did not resolve the issue. **
+
+** Create a joint developer GitHub account for further development efforts.  **
+
+** Created an Epic Games account linked with the raspet.dev account and connected GitHub to the Epic Games account. **
+
 ---

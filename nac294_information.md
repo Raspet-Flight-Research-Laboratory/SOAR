@@ -159,4 +159,24 @@ NOTE: SEE usbipd /? for help. **
 
 ** Created an Epic Games account linked with the raspet.dev account and connected GitHub to the Epic Games account. **
 
+
+---
+# * (06/19/2024) *
+
+** Began working on some possible workarounds for the current task 8 software failures. **
+
+** Created a .wslconfig file in the %userprofile% (C:\Users\rfrl) folder to force WSL into mirrored mode. 
+NOTE: I allowed inbound connections with the following admin powershell command: "Set-NetFirewallHyperVVMSetting -Name '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -DefaultInboundAction Allow". This needs to be set to Block instead of Allow to reset it to default. **
+
+ ** Even after setting up mirrored mode, QGC is still throwwing errors. **
+ 
+ ** Re-trying with QGC installed on windows **
+ 
+ ** Fixed the AirSim/Px4/QGC flight upload issues by re-installing QGC on windows, and manually connecting it to PX4. **
+ 
+ ** NOTE: the IP that QGC connects to PX4 with is 172.29.198.6, this can be found in WSL with the command: "ip addr" on Ubuntu. **
+ 
+ ** Updated start_sim.cmd to support the new install location of QGC and to solve a few previous issues. **
+ 
+ ** Sucessfully connected the Taranis to QGC and flew a mission (from Raspet II to the swamp and back). The new setup WORKS FLAWLESSLY. **
 ---

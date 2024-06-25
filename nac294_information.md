@@ -114,7 +114,7 @@ NOTE: IF THE QGC SCREEN STARTS GLITCHING IT IS A WSL ISSUE, NOT A QGC ISSUE. SEE
 
 
 ---
-# * (06/12/2024) *
+# * (06/12/2024) * hours -> 7
 
 ** Started working on connecting Ardupilot and AirSim. (Much harder than it sounds.) **
 
@@ -128,7 +128,7 @@ NOTE: IF THE QGC SCREEN STARTS GLITCHING IT IS A WSL ISSUE, NOT A QGC ISSUE. SEE
 
 
 ---
-# * (06/13/2024) *
+# * (06/13/2024) * hours -> 8
 
 ** Fixed this issue where QGC would never reach the "Ready to fly" state, thanks to Matthew. **
 
@@ -142,14 +142,14 @@ NOTE: IF THE QGC SCREEN STARTS GLITCHING IT IS A WSL ISSUE, NOT A QGC ISSUE. SEE
 
 
 ---
-# * (06/14/2024) *
+# * (06/14/2024) * hours -> 1
 
 ** Forced Windows to connect the Logitech controller to WSL, Windows cannot use this controller until it is unbound.
 NOTE: SEE usbipd /? for help. **
 
 
 ---
-# * (06/18/2024) *
+# * (06/18/2024) * hours -> 8
 
 ** Downloaded process explorer **
 
@@ -161,7 +161,7 @@ NOTE: SEE usbipd /? for help. **
 
 
 ---
-# * (06/19/2024) *
+# * (06/19/2024) * hours -> 8
 
 ** Began working on some possible workarounds for the current task 8 software failures. **
 
@@ -179,4 +179,33 @@ NOTE: I allowed inbound connections with the following admin powershell command:
  ** Updated start_sim.cmd to support the new install location of QGC and to solve a few previous issues. **
  
  ** Sucessfully connected the Taranis to QGC and flew a mission (from Raspet II to the swamp and back). The new setup WORKS FLAWLESSLY. **
+ 
+ 
 ---
+# * (06/20/2024) * hours -> 4
+
+** Began working to get camera feed from AirSim to QGC. **
+
+** Found a way to begin connecting multiple asynchronous vehicles to the same AirSim project. **
+
+
+---
+# * (06/24/2024) * hours -> 3
+
+** Worked on setting up a project similar to SOAR on personal machine. **
+
+
+---
+# * (06/25/2024) * hours -> 7.5
+
+** Set up the SOAR drone to launch in first person view. **
+
+** Moved settings.json into the SOAR project to make it easier to track changes. **
+
+** NOTE: THE UNREAL PROJECT NEEDS TO BE BOOTED FROM THE STARTUP FILE. IF STARTED FROM THE BLOCKS.UPROJECT THE WRONG SETTING WILL LOAD. **
+
+** NOTE: It looks like we may have to implement a small UDP protocol to get camera data from AirSim to QGC. **
+
+** Began setting up a blueprint in SOAR to swap between FPV and GCSV. **
+---
+

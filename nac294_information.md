@@ -207,5 +207,34 @@ NOTE: I allowed inbound connections with the following admin powershell command:
 ** NOTE: It looks like we may have to implement a small UDP protocol to get camera data from AirSim to QGC. **
 
 ** Began setting up a blueprint in SOAR to swap between FPV and GCSV. **
----
 
+
+---
+# * (06/26/2024) * hours -> 8
+
+** Finished the Unreal blueprint for the new GCSV camera. **
+
+** Began studying how to implement flight logs. **
+
+** Added an actor to the Unreal project for the purpose of data collection. **
+
+** Started building the code for writing data from AirSim to a CSV file. **
+
+
+---
+# * (06/27/2024) * hours -> 5
+
+** Created a short SOAR flight video for Brady. **
+
+** Started working on importing more flight models (fixed-wing model) to AirSim. **
+
+** Changed line 42 in SOAR/AirSim/GazeboDrone/scr/main.cpp from msr::airlib::MultirotorRpcLibClient client; to msr::airlib::MultirotorRpcLibClient client("172.29.192.1");. **
+
+** Began installing Gazebo on WSL. **
+
+** NOTE GAZEBO IS NOT WORKING AS OF TODAY BECAUSE OF BOOST::SIGNAL depreciation. **
+
+** Began fixing the Gazebo dependance issues. **
+
+
+---

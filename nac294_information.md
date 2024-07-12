@@ -238,3 +238,28 @@ NOTE: I allowed inbound connections with the following admin powershell command:
 
 
 ---
+# * (07/09/2024) * hours -> 1
+
+** Continued setting up the project on personal machine. **
+
+
+---
+# * (07/11/2024) * hours -> 8
+
+** Began searching for the best way to install Gazebo. **
+
+** After fighting with make not being able to execute the command "make px4_sitl gz_x500" for hours. I found that it is dependent on the installation,
+NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garden CANNOT BE INSTALLED AT THE SAME TIME. **
+
+** Sucessfully connected Gazebo and QGC. **
+
+** Began working on connecting AirSim and Gazebo. **
+
+** As of now, Gazebo does not seem like a good option for pairing with AirSim. **
+
+** Got PX4 and Gazebo working. **
+
+** Began researching AirSim code, so that we can write our own GazeboDrone driver. **
+
+
+---

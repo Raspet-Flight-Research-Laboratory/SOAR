@@ -263,3 +263,36 @@ NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garde
 
 
 ---
+# * (07/12/2024) * hours -> 7.5
+
+** Continued researching methods for connecting Gazebo and AirSim. **
+
+** Cloned colosseum to WSL and built it with GCC. **
+
+** Built GazeboDrone in GCC also. **
+
+** Finished installing the multi-window extension. **
+
+** Began looking into collecting vehicle information from PX4 directly. **
+
+** Brady found the beginnings of what we could use to collect data. **
+
+
+---
+# * (07/14-15/2024) * hours -> 2
+
+** Continued working on settung up the SOAR project on my personal machine. **
+
+
+---
+# * (07/16/2024) * hours -> 8
+
+** Began working on the socket-based architecture for the data logging and the connection to Unreal from outside sources. **
+
+** The current server program is under development and it is located in C:\...\source\repos\socketTests. **
+
+** Completed a bare-bones socket connection protocol. NOTE: NEEDS TO BE TESTED. I'm working on that... **
+
+
+
+---

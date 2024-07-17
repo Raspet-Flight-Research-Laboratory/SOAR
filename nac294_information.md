@@ -291,8 +291,17 @@ NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garde
 
 ** The current server program is under development and it is located in C:\...\source\repos\socketTests. **
 
-** Completed a bare-bones socket connection protocol. NOTE: NEEDS TO BE TESTED. I'm working on that... **
+** Completed a simplistic server-side socket connection protocol. NOTE: NEEDS TO BE TESTED. I'm working on that... **
 
+
+---
+# * (07/17/2024) * hours -> 6.5
+
+** Continued working on the socket connections for the SOAR project. Working on turning them into a library. **
+
+** Finished the Client-side now working on making it better. **
+
+** The client server communication works, but not as expected. More work is required. **
 
 
 ---

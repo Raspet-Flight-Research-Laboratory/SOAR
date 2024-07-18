@@ -305,3 +305,15 @@ NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garde
 
 
 ---
+# * (07/18/2024) * -> hours 2
+
+** Added new system variables to take us directly to the SOAR project, and to the C:\...\source\repos folder. **
+
+** The system variables can be accessed on the command line with %SOAR% and %codeprofile% respectively. **
+
+** Continued developing the rfrl library for building sockets. **
+
+** Began researching the type of connections that Flight Gear uses. **
+
+
+---

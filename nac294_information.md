@@ -317,3 +317,31 @@ NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garde
 
 
 ---
+# * (07/19/2024) * -> hours 1
+
+** Continued working on the rfrl socket toolkit. **
+
+
+---
+# * (07/22/2024) * -> hours 2
+
+** Continued working on rfrl socket toolkit. **
+
+
+---
+# * (07/23/2024) * -> hours 7.5
+
+** Continued working on toolkit. **
+
+** Continued working on connecting AirSim and FlightGear. **
+
+** Continued working on data logging. **
+
+** Added fgfs.exe (FlightGear) to the PATH to support future development. **
+
+** Performed a clean install of FlightGear and got the FGFS command working on CMD. **
+
+** Sucessfully connected sockets via the localhost. Next is FlightGear. **
+
+
+---

@@ -345,3 +345,21 @@ NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garde
 
 
 ---
+# * (07/24/2024) * -> hours 8
+
+** Fixed the toolkit not reading the correct number of bytes. **
+
+** Continued researching connecting to FlightGear via TCP. **
+
+** Sucessfully connected to FlightGear via TCP. **
+
+** Working on getting data from FlightGear now. Seems like I will need to build an xml file in the FG root directory. **
+
+** Added a soar_protocol.xml file to the FG root. **
+
+** As of today, I cannot connect the socket library to the generic FG protocol. It connects via telnet, but it does not connect to generic. **
+
+** Scratch that last thought. I got it working. NOTE you must connect to FG as a SERVER. The correct way to start FG is: "fgfs --generic=socket,out,10,localhost,62553,tcp,soar_protocol". **
+
+
+---

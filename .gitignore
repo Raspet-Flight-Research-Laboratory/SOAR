@@ -405,3 +405,6 @@ PythonClient/docs/_build
 # clangd generated folder, for e.g. from VSCode clangd extension
 .cache/
 /cppCode
+
+# Ignore the RFRL-Toolkit
+RFRL-Toolkit

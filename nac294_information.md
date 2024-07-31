@@ -363,3 +363,25 @@ NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garde
 
 
 ---
+# *(07/30/2024) * -> hours 8
+
+** Accidentally deleted the log for this day, so this is a place holder because I forgor. **
+
+
+---
+# * (07/31/2024) * -> hours 8
+
+** Fixed the tokenizer functions, AGAIN. **
+
+** NOTE: We may need to proceed with development on a Linux environment since the current AirSim project has issues. **
+
+** I have determined the method that we can use to perform data logging and FlightData injection, but I currently cannot implement it. **
+
+** Downloaded VirtualBox and created an Ubuntu VM. **
+
+** Verified that the TCP sockets work on Linux as well as Windows. **
+
+** Began implementing UDP connections. **
+
+
+---

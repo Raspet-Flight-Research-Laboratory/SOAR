@@ -28,16 +28,3 @@ void ADataCollectionActor::Tick(float DeltaTime)
 }
 // DEFAULTS
 // ************************************************************************************************************************
-
-
-// ************************************************************************************************************************
-// Define a function to write to a CSV
-void writeData() {
-
-	std::fstream file;
-    std::string str = "flightLog";
-	unsigned int index = 1;
-
-	std::cout << str + index << std::endl;
-
-}

@@ -385,3 +385,27 @@ NOTE: PX4 requires the gz-garden binary; however, the gazebo binary and gz-garde
 
 
 ---
+# * (08/06/2024) * -> hours 7.5
+
+** Continued working on the VM for testing AirSim. **
+
+** VirtualBox does not seem to work with Ubuntu 24.04, so I downgraded to 22.04 to try again. **
+
+** Continued working on rfrl toolkit. **
+
+** Installed Ubuntu 22.04 (Jammy Jellyfish) onto the VirtualBox vm. PW: rfrl UN: rfrl. **
+
+** Scratch all of that. All VMs despise Hyper-V, so we will need another drive for an Ubuntu installation. **
+
+** Created a new Unreal project named actorTest for building an testing actors. **
+
+** Built a data transmitter and a data collector in Unreal. **
+
+** Changed some files in Unreal in order to get it to actually compiler. Line 1640 of BgScriptReader.cs was changed from 
+```report.NotifyUsers.UnionWith(users);``` to ```if (users != null) report.NotifyUsers.UnionWith(users); ```. 
+Changed line 87 of CheckForHacks.cs from ```Logger.LogInformation("Scanning files...", FilesToCheck.Count);``` to ```Logger.LogInformation("Scanning files... [{Arg0}]", FilesToCheck.Count);```. 
+
+See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation-tool-after-updating-visual-studio-today-unreal-5-3-2/1393088/18) **
+
+
+---

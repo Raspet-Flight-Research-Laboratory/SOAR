@@ -407,5 +407,13 @@ Changed line 87 of CheckForHacks.cs from ```Logger.LogInformation("Scanning file
 
 See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation-tool-after-updating-visual-studio-today-unreal-5-3-2/1393088/18) **
 
+** Disabled live coding in Unreal as it was causing errors with MSVS. **
+
+** Sucessfully loaded an actor into the Blocks project. **
+
+** Created an actor for data logging, and added bare-bones code for that actor. **
+
+** Thanks to Matthew we got an external drive working with Ubuntu, so we can build the project in a native Linux environment. ** 
+
 
 ---

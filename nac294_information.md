@@ -417,3 +417,21 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 
 ---
+# * (08/07/2024) * -> hours 7.5
+
+** Currently fighting with Unreal, the project isn't resolving my custom symbols despite the inclusion of my files in the actor source. **
+
+** Currently working out how to get the blocks project to compile my custom files. **
+
+** Downloaded SOAR on Ubuntu. **
+
+** Updated Ubuntu. **
+
+** The current version of our project is not working properly. The setup.sh does not install the required version of rpclib, **
+
+** There are MANY things wrong with the Ubuntu installation of AirSim. **
+
+** I got Unreal setup on Ubuntu. **
+
+
+---

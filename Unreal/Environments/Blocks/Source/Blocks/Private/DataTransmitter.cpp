@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "AirSim.h"
 #include "DataTransmitter.h"
+#include "AirSim.h"
 #include "../../../../../../RFRL-Toolkit/rfrl.hpp"
 
 // Sets default values
@@ -32,7 +32,7 @@ void ADataTransmitter::writeData() {
 
 	if (GEngine)
     {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hello World"));
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Data Trnsmission"));
     }
 }
 

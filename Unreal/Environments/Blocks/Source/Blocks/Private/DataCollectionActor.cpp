@@ -1,8 +1,7 @@
 // ************************************************************************************************************************
 // DEFAULTS
 #include "DataCollectionActor.h"
-#include <fstream>
-#include <string>
+#include "../../../../../../RFRL-Toolkit/rfrl.hpp"
 #include <iostream>
 
 // Sets default values
@@ -17,7 +16,7 @@ ADataCollectionActor::ADataCollectionActor()
 void ADataCollectionActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame

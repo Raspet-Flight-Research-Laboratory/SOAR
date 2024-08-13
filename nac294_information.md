@@ -435,3 +435,17 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 
 ---
+# * (08/10-11/2024) * -> hours 4
+
+** Continued trying to build AirSim on Ubuntu. **
+
+
+---
+# * (08/13/2024) * -> hours 7.5
+
+** Began working on getting the project running on Ubuntu 20.04. **
+
+**
+
+
+---

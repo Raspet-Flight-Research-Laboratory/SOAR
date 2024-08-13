@@ -445,6 +445,10 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 ** Began working on getting the project running on Ubuntu 20.04. **
 
+** Tested RFRL-Toolkit on Linux. **
+
+** Partitioned the external drive, and installed Ubuntu 20.04. **
+
 **
 
 

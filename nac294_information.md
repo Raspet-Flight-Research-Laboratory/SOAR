@@ -449,7 +449,11 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 ** Partitioned the external drive, and installed Ubuntu 20.04. **
 
-**
+** Began researching possible GUI libraries for future GUI development. **
+
+** Installed Java for potential future GUI development. **
+
+** Added the Java/bin to the path so that we have access to the jpackage.exe. **
 
 
 ---

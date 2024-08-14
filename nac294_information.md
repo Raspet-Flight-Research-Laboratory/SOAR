@@ -451,9 +451,25 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 ** Began researching possible GUI libraries for future GUI development. **
 
-** Installed Java for potential future GUI development. **
+** Installed Java and Visual Basic for potential future GUI development. **
 
 ** Added the Java/bin to the path so that we have access to the jpackage.exe. **
+
+
+---
+# * (08/14/2024) * -> hours 6
+
+** Continued researching GUI for future development. **
+
+** Installed LLVM (Clang) for compiling C/C++ code without CL (MSVS). **
+
+** Added LLVM/bin to the PATH. **
+
+** I have thought about it, and it will probably be best to use Qt (C++ library) for GUI development. **
+
+** Updated RFRL-Toolkit, removed CL compiler reliance. **
+
+** Kinda leaning towards FLTK or something similar for GUI development now. **
 
 
 ---

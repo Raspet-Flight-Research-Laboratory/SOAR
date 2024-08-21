@@ -473,3 +473,22 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 
 ---
+# * (08/19/2024) * hours -> 4
+
+** Started building Colosseum for UE 5.3 instead of AirSim. **
+
+** Fixed some build issues with respect to the Colosseum project. **
+
+
+---
+# * (08/20/2024) * -> hours 3
+
+** Continued trying to fix build errors in the Blocks project on Ubuntu 20.04. **
+
+** Discovered that the issue is being caused in step 3/6 in the compilation process. (somtheing to do with a .so file) **
+
+
+---
+# * (08/21/2024) * -> hours -> 2.5
+
+** The Raspet computer is not recognizing the SSD for some reason. Currently working through that. **

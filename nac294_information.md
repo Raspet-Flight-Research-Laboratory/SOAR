@@ -481,7 +481,7 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 
 ---
-# * (08/20/2024) * -> hours 3
+# * (08/20/2024) * hours -> 2
 
 ** Continued trying to fix build errors in the Blocks project on Ubuntu 20.04. **
 
@@ -489,6 +489,33 @@ See [this link](https://forums.unrealengine.com/t/error-compiling-the-automation
 
 
 ---
-# * (08/21/2024) * -> hours -> 2.5
+# * (08/21/2024) * hours -> 2.5
 
 ** The Raspet computer is not recognizing the SSD for some reason. Currently working through that. **
+
+** NOTE: The RFRL desktop's version of GRUB does not boot the external Ubuntu SSD by default anymore, and I don't know how to fix it. 
+To boot from the drive, do the following:
+
+1. Press F8 at POST, and select the Ubuntu SSD as the boot device.
+2. You should see the GRUB terminal. Enter the following commands.
+	1. set root=(hd0,gpt2). PLEASE MAKE SURE THIS IS THE UBUNTU DRIVE FIRST BY USING THE COMMAND ls (hd0,gpt2).
+	2. linux /boot/vmlinuz-5.15.0-119-generic root=/dev/sda2 AGAIN, THE SDA2 IS RELEVANT TO THE DRIVE ITSELF, PLEASE VERIFY.
+	3. initrd /boot/initrd.img-5.15.0-119-generic
+	4. boot
+**
+
+
+
+---
+# * (08/22/2024) * hours -> 4
+
+** Re-installed SOAR and Colosseum to see if that will make any difference when compiling. **
+
+** Installed nvidia driver 555. So that the RFRL desktop can run Unreal. **
+
+** Configured Ubuntu to work with the RFRL headset. **
+
+** Fought to get the nvidia driver working with secure boot. That took WAY too long. **
+
+** Still having build issues in the AirSim project. The 
+

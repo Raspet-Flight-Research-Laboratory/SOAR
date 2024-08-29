@@ -517,5 +517,57 @@ To boot from the drive, do the following:
 
 ** Fought to get the nvidia driver working with secure boot. That took WAY too long. **
 
-** Still having build issues in the AirSim project. The 
+** Still having build issues in the AirSim project. **
 
+
+---
+# * (08/26/2024) * hours -> 3
+
+** Finally fixed the compilation issues in the Colosseum project. One of the .so files was missing. **
+
+** Got AirSim, PX4, and QGC working on Ubuntu 20.04. WITH A SUCCESSFUL FLIGHT. **
+
+** Continued working on getting the project setup on Ubuntu. **
+
+** Continued developing the SOAR project. **
+
+
+---
+# * (08/27/2024) * -> hours 4
+
+** Made some changes to the RFRL-Toolkit. **
+
+** If I am being honest, I do not remember what else I did on this day. **
+
+** I think I got PX4 and QGC working with the Colossuem project on Linux. **
+
+
+---
+# * (08/28/2024) * -> hours 3
+
+** Most of this day was spent discussing the potential Agile Autonomy project. **
+
+** Made a few more changes to the RFRL toolkit. E.g., I added two new functions that allow us to customize the EOT characters, and how the data is split on recieve. **
+
+
+---
+# * (08/29/2024) * -> hours 4
+
+** Added some additional functionality to the rfrlSocket class. **
+
+** Cloned the Cesium for Unreal projects from github. Currently trying to get that to work on Linux. **
+
+** The Cesium for Unreal github clone did not work, so I will try the .zip files at [this link](https://github.com/CesiumGS/cesium-unreal/releases) instead. **
+
+** This new source from Cesium seems to have worked, the plugin compiled succssfully. NOTE: This causes Unreal to crash if you do not also copy the shaders to the Plugins folder. **
+
+** Got cesium up and running for Unreal on Linux. **
+
+** Began researching for a potential survey. **
+
+** Started compiling sources for a detect and avoid survey paper. **
+
+** Created the baseline for a survey paper in Overleaf. **
+
+
+---

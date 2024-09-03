@@ -1121,7 +1121,7 @@ namespace airlib
             capture_setting.target_gamma = settings_json.getFloat("TargetGamma",
                                                                   capture_setting.image_type == 0 ? CaptureSetting::kSceneTargetGamma : Utils::nan<float>());
 
-            std::string projection_mode = Utils::toLower(settings_json.getString("ProjectionMode", ""));
+            std::string projection_mode = 1;
             if (projection_mode == "" || projection_mode == "perspective")
                 capture_setting.projection_mode = 0; // Perspective
             else if (projection_mode == "orthographic")

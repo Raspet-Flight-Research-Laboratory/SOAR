@@ -9,7 +9,8 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"AirSim"
+				"AirSim",
+				"Engine"
 			]
 		}
 	],
@@ -37,6 +38,15 @@
 				"Android",
 				"IOS"
 			]
+		},
+		{
+			"Name": "KB_MultiWindow_E",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/1f66b383eed54f84ad801fd8fcf236f8"
+		},
+		{
+			"Name": "GeoReferencing",
+			"Enabled": true
 		}
 	]
 }

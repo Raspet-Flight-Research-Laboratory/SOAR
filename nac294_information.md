@@ -571,3 +571,15 @@ To boot from the drive, do the following:
 
 
 ---
+# * (09/20/2024) *
+
+** It has been many years since my last update. Most of it was spent trying to fix all the issues related to switching to Ubuntu 20.04. **
+
+** So today, I finally got the build issues sorted out, thanks to someone on Github. **
+
+** Now I just have to get Gazebo connected to AirSim. And Cesium, because it is not working now. **
+
+** 
+
+
+---

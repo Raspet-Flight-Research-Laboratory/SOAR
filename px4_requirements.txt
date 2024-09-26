@@ -1,0 +1,6 @@
+kconfiglib
+jinja2
+jsonschema
+pyros-genmsg
+empy=3.3.4
+future

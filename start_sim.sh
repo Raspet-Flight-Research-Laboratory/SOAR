@@ -1,7 +1,18 @@
-if ["$1" = "--gz"]; then
-~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor ~/repos/Colosseum/Unreal/Environments/Blocks/Blocks.uproject -settings='~/repos/Colosseum/gz-settings.json'
+#!/bin/bash
 
+if [ "$1" == "--gz" ]; then
+    gnome-terminal -- bash -c "~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor ~/repos/SOAR/Unreal/Environments/Blocks/Blocks.uproject -settings="~/repos/SOAR/gz-settings.json""
+
+    if [ "$2" == "--headless" ]; then
+        gnome-terminal -- bash -c "cd ~/repos/PX4-Autopilot && HEADLESS=1 make px4_sitl gazebo-classic; exec bash"
+    else
+        gnome-terminal -- bash -c "cd ~/repos/PX4-Autopilot && make px4_sitl gazebo-classic; exec bash"
+    fi
+
+    gnome-terminal -- bash -c "cd ~/repos/QGC && ./QGroundControl.AppImage; exec bash"
+    gnome-terminal -- bash -c "cd ~/repos/SOAR/GazeboDrone/build && ./GazeboDrone; exec bash"
 else
-~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor ~/repos/Colosseum/Unreal/Environments/Blocks/Blocks.uproject -settings='~/repos/Colosseum/settings.json'
-
+    gnome-terminal -- bash -c "~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor ~/repos/SOAR/Unreal/Environments/Blocks/Blocks.uproject -settings="~/repos/SOAR/settings.json""
+    gnome-terminal -- bash -c "cd ~/repos/PX4-Autopilot && make px4_sitl_default none_iris; exec bash"
+    gnome-terminal -- bash -c "cd ~/repos/QGC && ./QGroundControl.AppImage; exec bash"
 fi

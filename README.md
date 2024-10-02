@@ -48,4 +48,4 @@ For any questions or comments regarding SOAR, please contact:
 
 ## License
 
-This project is released under the MIT License. Please review the [License file](LICENSE) for more details.
+This project is released under the GNU General Public License v3.0. Please review the [License file](LICENSE) for more details.

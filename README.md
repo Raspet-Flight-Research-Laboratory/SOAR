@@ -1,64 +1,88 @@
-# Welcome to Colosseum, a successor of [AirSim](https://github.com/microsoft/AirSim)
-  
-## Build Status
-[![Ubuntu Build](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_ubuntu.yml/badge.svg)](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_ubuntu.yml)
-[![MacOS Build](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_macos.yml/badge.svg)](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_macos.yml)
-[![Windows Build](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_windows.yml/badge.svg)](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_windows.yml)
+# Welcome to SOAR (Simulated Operations for Aerial Research)
 
-[![](https://dcbadge.vercel.app/api/server/y9ZJKKKn8J)](https://discord.gg/y9ZJKKKn8J)
-  
-## Looking for more performance?
-The company managing this repo created the SWARM Developer System to help build, simulate and deploy single and
-multi-agent autonomous systems. Check it out here: [SWARM Developer System](https://www.swarmsim.io/overview/developer)
-  
-## IMPORTANT ANNOUNCEMENT
-Moving forward, we are now using Unreal Engine 5 version 5.03 or greater! If you
-want to use UE4.27, you can use the branch `ue4.27`.
-  
-## Unreal Engine Version for Main Branch
-The main branch of this repository **only** supports Unreal Engine 5.2! Please see our other branches
-for other versions that we support.
-  
+SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5 by [Colosseum](https://github.com/CodexLabsLLC/Colosseum), developed for research purposes at the Raspet Flight Research Laboratory.
+
+## Unreal Engine Version
+
+The version of the Colosseum project that we used here supports Unreal 5.3.2 on both Windows and Linux.
+
 ## Currently Supported Operating Systems
-Below are the list of officially supported Operating Systems, with full Unreal Engine support:
-### Windows
-- Windows 10 (Latest)
 
-### Linux
-- ~~Ubuntu 18.04~~ (NO LONGER SUPPORTED. 18.04 is EOL so we will not be checking this anymore and GitHub doesn't support CI builds)
-- Ubuntu 20.04
-  
-**NOTE** Ubuntu 22.04 is not currently supported due to Vulkan support. If this changes, we will notify you here. If you want to use Colosseum on 22.04, we highly recommend that you use Docker.
+Everything in the SOAR project was built and tested on Ubuntu version 20.04, (*PREFERRED* because of Gazebo support) and Windows 11. There is no support for Colosseum for any version of Ubuntu other than 20.04.
 
-### MacOS (Non-M1 Macs only)
-- MacOS Monterey (12)
-- MacOS (11)
-  
-**NOTE** MacOS support is highly experimental and may be dropped in future releases. This is because Apple continually changes their build tools and doesn't like 3rd party developers in general. There are ongoing discussions to remove this support.
+### PLEASE NOTE:
+Do not attempt to run this project partially on Windows and partially on Ubuntu via a virtual machine or Windows subsystem for Linux unless you have a GPU that supports GPU passthrough.
 
-## Sponsors
-1. Codex Laboratories LLC [Website](https://www.codex-labs-llc.com)
-  
-## Introduction
-  
-Colosseum is a simulator for robotic, autonomous systems, built on [Unreal Engine](https://www.unrealengine.com/) (we now also have an experimental [Unity](https://unity3d.com/) release). It is open-source, cross platform, and supports software-in-the-loop simulation with popular flight controllers such as PX4 & ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment. Similarly, we have an experimental release for a Unity plugin.
-  
-This is a fork of the AirSim repository, which Microsoft decided to shutdown in July of 2022. This fork serves as a waypoint to building a new and better simulation platform. The creater and maintainer of this fork is Codex Laboratories LLC (our website is [here](https://www.codex-labs-llc.com)). Colosseum is one of the underlying simulation systems that we use in our product, the [SWARM Simulation Platform](https://www.swarmsim.io). This platform exists to provide pre-built tools and low-code/no-code autonomy solutions. Please feel free to check this platform out and reach out if interested.
+## 1. Introduction
 
-## Join the Community
-We have decided to create a Discord channel to better allow for community engagement. Join here: [Colosseum Robotics Discord](https://discord.gg/y9ZJKKKn8J).
-  
-  
-## Goals and Project Development
-This section will contain a list of the current features that the community and Codex Labs are working on to support and build.
+### NOTE: Skip to section 3 for build instructions...
 
-Click [here](https://docs.google.com/document/d/1doohQTos4v1tg4Wv6SliQFnKNK1MouKX2efg2mapXFU/edit?usp=sharing) to view our current development goals!
+SOAR is a simulator for aerial research, built on [Unreal Engine](https://www.unrealengine.com/). It is open-source and supports software-in-the-loop simulation with popular flight controllers such as PX4 & ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment.
 
-If you want to be apart of the official development team, attend meetings, etc., please utilize the Slack channel (link above) and 
-let Tyler Fedrizzi know!
+This simulator is a fork of the AirSim repository, tailored specifically for research purposes at the Raspet Flight Research Laboratory. The main focus of SOAR is to provide a platform for investigating the effects of different Detect and Avoid (DAA) displays on pilots in a multiplayer flight simulator environment.
+
+## 2. Research Background
+
+The research project behind SOAR aims to build upon the work done by Friedman-Berg et al. (2014) in their paper "Minimum Visual Information Requirements For Detect and Avoid in Unmanned Aircraft Systems." The authors conducted a human-in-the-loop simulation to determine the minimum visual information requirements for an effective DAA system in Unmanned Aircraft Systems (UAS). They identified the "Prediction" display configuration as the minimum required for successful DAA performance.
+
+SOAR seeks to expand on this research by:
+
+1. Finalizing and testing multiple variations of DAA displays, including the "Prediction" configuration and additional designs with more features and potential clutter.
+2. Building a Primary Flight Display (PFD) window with elements such as airspeed, altitude, pitch, roll, yaw, gravity, and grid.
+3. Implementing a First-Person View (FPV) window and adding a fixed-wing UAV to the simulator.
+4. Integrating a Cesium World Map into the Unreal Engine project for enhanced realism.
+5. Developing a settings menu to allow users to set flight mode and select aircraft models.
+6. Creating a Test Director GUI for setting UI display type, encounter type, and other parameters.
+
+By focusing on these aspects, SOAR aims to provide a comprehensive platform for evaluating the effectiveness of different DAA displays and their impact on pilot performance in a multiplayer flight simulator environment.
+
+## 3. SOAR Build Instructions
+
+This section of the README give full comprehensive instructions for building the project on Ubuntu and Windows. Additionally, this section details significant errors that the RFRL team faced when building the Colosseum project.
+
+### Ubuntu
+- clone this project: git clone git@github.com:Raspet-Flight-Research-Laboratory/SOAR.git
+- cd into the project directory and run: chmod +x *.sh
+- cd into (SOAR directory)/Unreal/Environments/Blocks and run: chmod +x *.sh
+- cd back into the project directory and run: ./setup.sh -> This will begin downloading all the project dependecies.
+- Once the downloads are done, run: ./build.sh -> This will create the folder (SOAR directory)/Unreal/Plugins, you can move this folder into any project you want. For this tutorial we use the default Blocks project.
+- Once this is done, you can copy the Plugins folder into (SOAR directory)/Unreal/Environments/Blocks -> otherwise, if you are using a custom Unreal project, there is a tutorial on how to use AirSim for custom projects [here](https://microsoft.github.io/AirSim/unreal_custenv/), albeit outdated.
+- Now the project is ready to run in Unreal
+### Before going any farther, make sure you have Unreal and CesiumForUnreal installed, (see the Unreal and Cesium For Unreal subsections).
+- From the SOAR directory, start your project with the command: ./start_sim.sh -> YOU MAY NEED TO OPEN THIS SCRIPT AND CHANGE THE PATHS TO THE LOCATIONS OF UNREAL AND THE SOAR PROJECT ON YOUR MACHINE.
+- The Unreal Editor will tell you that the Blocks and AirSim modules are missing or created with a different engine version, and it will ask you if you want to compile from source, click yes.
+- This should compile and start the project.
+
+### Unreal
+
+- To build Unreal on Ubuntu 20.04, we need to visit [this website](https://www.unrealengine.com/en-US/linux), download the Linux_Unreal_Engine_5.3.2.zip and unzip it. -> It is recommended to unzip this directly into the ~ directory on Ubuntu for easy access.
+
+### Cesium For Unreal
+
+- To get the Cesium For Unreal plugin working on Ubuntu, you will have to download the pre-compiled version from [this site](https://github.com/CesiumGS/cesium-unreal/releases) and unzip it into (SOAR directory)/Unreal/Environments/Blocks/Plugins
+- You will need an access token which can be easily obtained by making an acount with Cesium and generating one using [their website](https://cesium.com/learn/ion/cesium-ion-access-tokens/).
+- The Cesium plugin is now usable.
+
+
+## 4. Miscellaneous Build Tutorials
+
+This section details how to build Linux on Ubuntu. This section does not provide any details for building on Windows, because installing Unreal, and plugins for Unreal is very simple and intuative on Windows.
+
+### Q Ground Control
+
+- To build QGC, you must navigate [here](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html) and download the QGroundControl.AppImage.
+- Once this is done, put the .AppImage files somewhere where you will know where it is, cd into the folder, and run: chmod +x QGroundControl.AppImage
+- The installation is complete.
+
+### PX4
+
+## Contact Information
+
+For any questions or comments regarding SOAR, please contact:
+
+- Email: bswann@raspet.mssstate.edu
+- GitHub: @mr.stealyocurls
 
 ## License
 
-This project is released under the MIT License. Please review the [License file](LICENSE) for more details.
-
-
+This project is released under the GNU General Public License v3.0. Please review the [License file](LICENSE) for more details.

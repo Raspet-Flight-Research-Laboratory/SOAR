@@ -8,7 +8,7 @@ The version of the Colosseum project that we used here supports Unreal 5.3.2 on 
 
 ## Currently Supported Operating Systems
 
-Everything in the SOAR project was built and tested on Ubuntu version 20.04, (*PREFERRED* because of Gazebo support) and Windows 11. There is no support for Colosseum for any version of Ubuntu other than 20.04.
+Everything in the SOAR project was built and tested on Ubuntu version 20.04. There is no support for Colosseum for any version of Ubuntu other than 20.04.
 
 ### PLEASE NOTE:
 Do not attempt to run this project partially on Windows and partially on Ubuntu via a virtual machine or Windows subsystem for Linux unless you have a GPU that supports GPU passthrough.
@@ -82,6 +82,11 @@ This section details how to build the other components of the simulator on Ubunt
 - Run: `sudo ./ubuntu.sh` -> This will install all of the PX4 dependancies.
 - Once this is done, PX4 is ready to be used.
 - PX4 can be invoked with commands similar to the onces found in `start_sim.sh`, and more details on the different PX4 startup commands can be found [on their website](https://docs.px4.io/main/en/dev_setup/building_px4.html).
+
+### Gazebo
+
+- To install Gazebo, you have to run `sudo apt install libgazebo9-dev gazebo` -> This installs Gazebo and all the tools you need to get Gazebo working with AirSim.
+- To get AirSim working with Gazebo, make sure you have already completed everything in Section 3, then follow the directions [here](https://microsoft.github.io/AirSim/gazebo_drone/).
 
 ## Contact Information
 

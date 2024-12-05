@@ -19,14 +19,14 @@ SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5
 </div>
 
 ## Table of Contents
-1. [![Notes](https://img.shields.io/badge/Notes-lightgreen?style=flat&logo)](#Notes)
-2. [![Introduction](https://img.shields.io/badge/Introduction-lightgreen?style=flat&logo)](#Introduction)
-3. [![Research Background](https://img.shields.io/badge/Research_Background-lightgreen?style=flat&logo)](#Research-Background)
-4. [![SOAR Build Tutorial](https://img.shields.io/badge/SOAR_Build_Turotial-lightgreen?style=flat&logo)](#SOAR-Build-Tutorial)
-5. [![Miscellaneous Build Tutorial](https://img.shields.io/badge/Miscellaneuos_Build_Tutorial-lightgreen?style=flat&logo)](#Miscellaneuos-Build-Tutorial)
-6. [![Contact Info](https://img.shields.io/badge/Key_Concepts-lightgreen?style=flat&logo)](#Contact-Info)
+1. [![Notes](https://img.shields.io/badge/Notes-lightgreen?style=flat&logo)](#notes)
+2. [![Introduction](https://img.shields.io/badge/Introduction-lightgreen?style=flat&logo)](#introduction)
+3. [![Research Background](https://img.shields.io/badge/Research_Background-lightgreen?style=flat&logo)](#research-background)
+4. [![SOAR Build Tutorial](https://img.shields.io/badge/SOAR_Build_Turotial-lightgreen?style=flat&logo)](#soar-build-tutorial)
+5. [![Miscellaneous Build Tutorial](https://img.shields.io/badge/Miscellaneuos_Build_Tutorial-lightgreen?style=flat&logo)](#miscellaneuos-build-tutorial)
+6. [![Contact Info](https://img.shields.io/badge/Key_Concepts-lightgreen?style=flat&logo)](#contact-info)
 
-## 1. Notes:
+## 1. Notes
 ## Unreal Engine Version
 
 The version of the Colosseum project that we used here supports Unreal 5.3.2.

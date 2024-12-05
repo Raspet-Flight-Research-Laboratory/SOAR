@@ -12,10 +12,10 @@ SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5
 </div>
 
 <div align="center">
-  <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-3.13.8-blue?logo=flutter&logoColor=white" alt="Flutter Badge"></a>
-  <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-3.7.0-blue?logo=dart&logoColor=white" alt="Dart Badge"></a>
   <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"><img src="https://img.shields.io/badge/License-MIT-green" alt="License Badge"></a>
-  <a href="https://flutter.dev/multi-platform"><img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20IOS%20%7C%20Chrome-violet?logo=android&logoColor=white" alt="Platform Badge"></a>
+  <a href="https://flutter.dev/multi-platform"><img src="https://img.shields.io/badge/Platform-Ubuntu-violet" alt="Platform Badge"></a>
+   <a><img alt="Static Badge" src="https://img.shields.io/badge/Unreal_Engine_5.3.2-grey"></a>
+   <a><img src="https://img.shields.io/badge/Languages-C++%20%7C%20Python-lightgrey?logo=Code::Blocks&logoColor=white" alt="Platform Badge"></a>
 </div>
 
 ## Table of Contents

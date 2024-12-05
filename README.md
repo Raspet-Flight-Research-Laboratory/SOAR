@@ -24,9 +24,9 @@ SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5
 3. [![Research Background](https://img.shields.io/badge/Research_Background-lightgreen?style=flat&logo)](#research-background)
 4. [![SOAR Build Tutorial](https://img.shields.io/badge/SOAR_Build_Turotial-lightgreen?style=flat&logo)](#soar-build-tutorial)
 5. [![Miscellaneous Build Tutorial](https://img.shields.io/badge/Miscellaneuos_Build_Tutorial-lightgreen?style=flat&logo)](#miscellaneuos-build-tutorial)
-6. [![Contact Info](https://img.shields.io/badge/Key_Concepts-lightgreen?style=flat&logo)](#contact-info)
+6. [![Contact Info](https://img.shields.io/badge/Contact_Info-lightgreen?style=flat&logo)](#contact-info)
 
-## 1. Notes
+## Notes
 ## Unreal Engine Version
 
 The version of the Colosseum project that we used here supports Unreal 5.3.2.
@@ -35,7 +35,7 @@ The version of the Colosseum project that we used here supports Unreal 5.3.2.
 
 Everything in the SOAR project was built and tested on Ubuntu version 20.04. There is no support for Colosseum for any version of Ubuntu other than 20.04.
 
-## 2. Introduction
+## Introduction
 
 ### NOTE: Skip to section 3 for build instructions...
 
@@ -43,7 +43,7 @@ SOAR is a simulator for aerial research, built on [Unreal Engine](https://www.un
 
 This simulator is a fork of the AirSim repository, tailored specifically for research purposes at the Raspet Flight Research Laboratory. The main focus of SOAR is to provide a platform for investigating the effects of different Detect and Avoid (DAA) displays on pilots in a multiplayer flight simulator environment.
 
-## 3. Research Background
+## Research Background
 
 The research project behind SOAR aims to build upon the work done by Friedman-Berg et al. (2014) in their paper "Minimum Visual Information Requirements For Detect and Avoid in Unmanned Aircraft Systems." The authors conducted a human-in-the-loop simulation to determine the minimum visual information requirements for an effective DAA system in Unmanned Aircraft Systems (UAS). They identified the "Prediction" display configuration as the minimum required for successful DAA performance.
 
@@ -58,7 +58,7 @@ SOAR seeks to expand on this research by:
 
 By focusing on these aspects, SOAR aims to provide a comprehensive platform for evaluating the effectiveness of different DAA displays and their impact on pilot performance in a multiplayer flight simulator environment.
 
-## 4. SOAR Build Instructions
+## SOAR Build Instructions
 
 This section of the README give full comprehensive instructions for building the project on Ubuntu and Windows. Additionally, this section details significant errors that the RFRL team faced when building the Colosseum project.
 
@@ -86,7 +86,7 @@ This section of the README give full comprehensive instructions for building the
 - The Cesium plugin is now usable.
 
 
-## 5. Miscellaneous Build Tutorials
+## Miscellaneous Build Tutorials
 
 This section details how to build the other components of the simulator on Ubuntu.
 

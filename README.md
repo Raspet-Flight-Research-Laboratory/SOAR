@@ -2,18 +2,40 @@
 
 SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5 by [Colosseum](https://github.com/CodexLabsLLC/Colosseum), developed for research purposes at the Raspet Flight Research Laboratory.
 
+<div align="center">
+   <!-- Make sure format is just like this.
+    Wrong -> <a>  <img/> </a> (this might cause a blue line after every badge).   Correct -> <a><img/></a> 
+    -->
+  <a href="https://www.raspet.msstate.edu/"><img src="https://img.shields.io/badge/Find%20us%20-Raspet_Flight_research_Laboratory%20-maroon?logoColor" alt="Find Us Badge"/></a> 
+  <a href="https://www.instagram.com/msstateraspet/"><img src="https://img.shields.io/badge/@msstateraspet-E4405F?logo=instagram&logoColor=white" alt="Instagram Badge"/></a>
+  <a href="https://www.linkedin.com/company/raspet-flight-research-laboratory"><img src="https://img.shields.io/badge/Raspet_Flight_Research_Laboratory-0077B5?logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>
+</div>
+
+<div align="center">
+  <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-3.13.8-blue?logo=flutter&logoColor=white" alt="Flutter Badge"></a>
+  <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-3.7.0-blue?logo=dart&logoColor=white" alt="Dart Badge"></a>
+  <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"><img src="https://img.shields.io/badge/License-MIT-green" alt="License Badge"></a>
+  <a href="https://flutter.dev/multi-platform"><img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20IOS%20%7C%20Chrome-violet?logo=android&logoColor=white" alt="Platform Badge"></a>
+</div>
+
+## Table of Contents
+1. [![Notes](https://img.shields.io/badge/Notes-lightgreen?style=flat&logo)](#Notes)
+2. [![Introduction](https://img.shields.io/badge/Introduction-lightgreen?style=flat&logo)](#Introduction)
+3. [![Research Background](https://img.shields.io/badge/Research_Background-lightgreen?style=flat&logo)](#Research-Background)
+4. [![SOAR Build Tutorial](https://img.shields.io/badge/SOAR_Build_Turotial-lightgreen?style=flat&logo)](#SOAR-Build-Tutorial)
+5. [![Miscellaneous Build Tutorial](https://img.shields.io/badge/Miscellaneuos_Build_Tutorial-lightgreen?style=flat&logo)](#Miscellaneuos-Build-Tutorial)
+6. [![Contact Info](https://img.shields.io/badge/Key_Concepts-lightgreen?style=flat&logo)](#Contact-Info)
+
+## 1. Notes:
 ## Unreal Engine Version
 
-The version of the Colosseum project that we used here supports Unreal 5.3.2 on both Windows and Linux.
+The version of the Colosseum project that we used here supports Unreal 5.3.2.
 
 ## Currently Supported Operating Systems
 
 Everything in the SOAR project was built and tested on Ubuntu version 20.04. There is no support for Colosseum for any version of Ubuntu other than 20.04.
 
-### PLEASE NOTE:
-Do not attempt to run this project partially on Windows and partially on Ubuntu via a virtual machine or Windows subsystem for Linux unless you have a GPU that supports GPU passthrough.
-
-## 1. Introduction
+## 2. Introduction
 
 ### NOTE: Skip to section 3 for build instructions...
 
@@ -21,7 +43,7 @@ SOAR is a simulator for aerial research, built on [Unreal Engine](https://www.un
 
 This simulator is a fork of the AirSim repository, tailored specifically for research purposes at the Raspet Flight Research Laboratory. The main focus of SOAR is to provide a platform for investigating the effects of different Detect and Avoid (DAA) displays on pilots in a multiplayer flight simulator environment.
 
-## 2. Research Background
+## 3. Research Background
 
 The research project behind SOAR aims to build upon the work done by Friedman-Berg et al. (2014) in their paper "Minimum Visual Information Requirements For Detect and Avoid in Unmanned Aircraft Systems." The authors conducted a human-in-the-loop simulation to determine the minimum visual information requirements for an effective DAA system in Unmanned Aircraft Systems (UAS). They identified the "Prediction" display configuration as the minimum required for successful DAA performance.
 
@@ -36,7 +58,7 @@ SOAR seeks to expand on this research by:
 
 By focusing on these aspects, SOAR aims to provide a comprehensive platform for evaluating the effectiveness of different DAA displays and their impact on pilot performance in a multiplayer flight simulator environment.
 
-## 3. SOAR Build Instructions
+## 4. SOAR Build Instructions
 
 This section of the README give full comprehensive instructions for building the project on Ubuntu and Windows. Additionally, this section details significant errors that the RFRL team faced when building the Colosseum project.
 
@@ -64,7 +86,7 @@ This section of the README give full comprehensive instructions for building the
 - The Cesium plugin is now usable.
 
 
-## 4. Miscellaneous Build Tutorials
+## 5. Miscellaneous Build Tutorials
 
 This section details how to build the other components of the simulator on Ubuntu.
 

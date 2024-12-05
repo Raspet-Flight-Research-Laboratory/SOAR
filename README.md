@@ -23,8 +23,8 @@ SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5
 2. [![Introduction](https://img.shields.io/badge/Introduction-lightgreen?style=flat&logo)](#introduction)
 3. [![Research Background](https://img.shields.io/badge/Research_Background-lightgreen?style=flat&logo)](#research-background)
 4. [![SOAR Build Tutorial](https://img.shields.io/badge/SOAR_Build_Tutorial-lightgreen?style=flat&logo)](#soar-build-tutorial)
-5. [![Miscellaneous Build Tutorial](https://img.shields.io/badge/Miscellaneuos_Build_Tutorial-lightgreen?style=flat&logo)](#miscellaneuos-build-tutorial)
-6. [![Contact Info](https://img.shields.io/badge/Contact_Info-lightgreen?style=flat&logo)](#contact-info)
+5. [![Miscellaneous Build Tutorials](https://img.shields.io/badge/Miscellaneuos_Build_Tutorial-lightgreen?style=flat&logo)](#miscellaneuos-build-tutorial)
+6. [![Contact Information](https://img.shields.io/badge/Contact_Info-lightgreen?style=flat&logo)](#contact-info)
 
 ## Notes
 ## Unreal Engine Version
@@ -37,7 +37,7 @@ Everything in the SOAR project was built and tested on Ubuntu version 20.04. The
 
 ## Introduction
 
-### NOTE: Skip to section 3 for build instructions...
+### NOTE: Skip to ![section 3](#soar-build-tutorial) for build instructions...
 
 SOAR is a simulator for aerial research, built on [Unreal Engine](https://www.unrealengine.com/). It is open-source and supports software-in-the-loop simulation with popular flight controllers such as PX4 & ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment.
 
@@ -58,7 +58,7 @@ SOAR seeks to expand on this research by:
 
 By focusing on these aspects, SOAR aims to provide a comprehensive platform for evaluating the effectiveness of different DAA displays and their impact on pilot performance in a multiplayer flight simulator environment.
 
-## SOAR Build Instructions
+## SOAR Build Tutorial
 
 This section of the README give full comprehensive instructions for building the project on Ubuntu and Windows. Additionally, this section details significant errors that the RFRL team faced when building the Colosseum project.
 

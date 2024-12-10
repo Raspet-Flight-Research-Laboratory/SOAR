@@ -13,8 +13,8 @@ SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5
 
 <div align="center">
   <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"><img src="https://img.shields.io/badge/License-MIT-green" alt="License Badge"></a>
-  <a href="https://flutter.dev/multi-platform"><img src="https://img.shields.io/badge/Platform-Ubuntu-violet" alt="Platform Badge"></a>
-   <a><img alt="Static Badge" src="https://img.shields.io/badge/Unreal_Engine_5.3.2-grey"></a>
+  <a href="https://releases.ubuntu.com/focal/"><img src="https://img.shields.io/badge/Platform-Ubuntu-violet" alt="Platform Badge"></a>
+   <a><img alt="Static Badge" src="https://img.shields.io/badge/Unreal_Engine-grey"></a>
    <a><img src="https://img.shields.io/badge/Languages-C++%20%7C%20Python-lightgrey?logo=Code::Blocks&logoColor=white" alt="Platform Badge"></a>
 </div>
 
@@ -109,6 +109,26 @@ This section details how to build the other components of the simulator on Ubunt
 
 - To install Gazebo, you have to run `sudo apt install libgazebo9-dev gazebo` -> This installs Gazebo and all the tools you need to get Gazebo working with AirSim.
 - To get AirSim working with Gazebo, make sure you have already completed everything in Section 3, then follow the directions [here](https://microsoft.github.io/AirSim/gazebo_drone/).
+
+## Project Structure
+
+This is the exact structure of our testing environments, and consequently, the file hierarchy in which this project is designed
+
+```
+~
+├── UnrealEngine/
+│   ├── Engine/
+│      ├── Binaries/
+│         ├── Linux/
+│            └── UnrealEditor
+├── repos/
+│   ├── SOAR/
+│      └── * Project Files *
+│   ├── PX4/
+│      └── * PX4 Files *
+│   ├── QGC/
+│      └── QGroundControl.AppImage
+```
 
 ## Contact Information
 

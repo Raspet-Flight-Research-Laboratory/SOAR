@@ -4,6 +4,12 @@
   "SimMode": "Multirotor",
   "ViewMode": "Fpv",
   "ClockType": "SteppableClock",
+    "SubWindows": [ {
+      "WindowID": 2,
+      "CameraName": "0",
+      "ImageType": 0,  
+      "Visible": true
+    }],
   "OriginGeopoint": {
     "Latitude": 33.44018,
     "Longitude": -88.84567
@@ -18,7 +24,7 @@
       "ControlIp": "remote",
       "ControlPortLocal": 14540,
       "ControlPortRemote": 14580,
-      "LocalHostIp": "172.29.192.1",
+      "LocalHostIp": "127.0.0.1",
       "Sensors": {
         "Barometer": {
           "SensorType": 1,

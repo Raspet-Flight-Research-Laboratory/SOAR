@@ -64,11 +64,11 @@ if [ "$(uname)" == "Darwin" ]; then
     export CXX="$(brew --prefix)/opt/llvm/bin/clang++"
 else
     if $gcc; then
-        export CC="gcc-8"
-        export CXX="g++-8"
+        export CC="gcc-9"
+        export CXX="g++-9"
     else
-        export CC="clang-8"
-        export CXX="clang++-8"
+        export CC="clang-12"
+        export CXX="clang++-12"
     fi
 fi
 
@@ -92,12 +92,6 @@ fi
 
 if [[ ! -d $build_dir ]]; then
     mkdir -p $build_dir
-fi
-
-# Fix for Unreal/Unity using x86_64 (Rosetta) on Apple Silicon hardware.
-CMAKE_VARS=
-if [ "$(uname)" == "Darwin" ]; then
-    CMAKE_VARS="-DCMAKE_APPLE_SILICON_PROCESSOR=x86_64"
 fi
 
 pushd $build_dir  >/dev/null
@@ -135,12 +129,12 @@ rsync -a --delete AirLib Unreal/Plugins/AirSim/Source
 rm -rf Unreal/Plugins/AirSim/Source/AirLib/src
 
 # Update all environment projects
-for d in Unreal/Environments/* ; do
-    [ -L "${d%/}" ] && continue
-    $d/clean.sh
-    mkdir -p $d/Plugins
-    rsync -a --delete Unreal/Plugins/AirSim $d/Plugins
-done
+# for d in Unreal/Environments/* ; do
+#     [ -L "${d%/}" ] && continue
+#     $d/clean.sh
+#     mkdir -p $d/Plugins
+#     rsync -a --delete Unreal/Plugins/AirSim $d/Plugins
+# done
 
 set +x
 

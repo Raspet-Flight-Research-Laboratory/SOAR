@@ -58,7 +58,7 @@ public:
         FName name_n = FName(*name);
         for (TActorIterator<AActor> It(context->GetWorld(), T::StaticClass()); It; ++It) {
             AActor* Actor = *It;
-            if (!Actor->IsPendingKill() && (Actor->ActorHasTag(name_n) || Actor->GetName().Compare(name) == 0)) {
+            if (IsValid(Actor) && (Actor->ActorHasTag(name_n) || Actor->GetName().Compare(name) == 0)) {
                 return static_cast<T*>(Actor);
             }
         }
@@ -71,7 +71,12 @@ public:
         UGameplayStatics::GetAllActorsOfClass(context, T::StaticClass(), foundActors);
     }
 
+    static void FindAllActorByTag(const UObject* context, FName tag, TArray<AActor*>& foundActors);
+    static FRotator FindLookAtRotation(AActor* source, AActor* target);
+
     static std::vector<std::string> ListMatchingActors(const UObject* context, const std::string& name_regex);
+    static std::vector<std::string> ListMatchingActorsByTag(const UObject* context, const std::string& tag_regex);
+
     UFUNCTION(BlueprintCallable, Category = "AirSim|LevelAPI")
     static bool loadLevel(UObject* context, const FString& level_name);
     UFUNCTION(BlueprintCallable, Category = "AirSim|LevelAPI")

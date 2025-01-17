@@ -3,8 +3,8 @@
 if [ "$1" == "--gz" ]; then
     gnome-terminal -- bash -c "~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor ~/repos/SOAR/Unreal/Environments/Blocks/Blocks.uproject -settings="~/repos/SOAR/gz-settings.json"; exec bash"
 
-    export PX4_HOME_LAT=33.44018
-    export PX4_HOME_LON=-88.84567
+    export PX4_HOME_LAT=33.440655
+    export PX4_HOME_LON=-88.848829
 
     if [ "$2" == "--headless" ]; then
         gnome-terminal -- bash -c "cd ~/repos/PX4-Autopilot && HEADLESS=1 make px4_sitl gazebo-classic; exec bash"

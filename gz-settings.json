@@ -6,8 +6,8 @@
     "ClockType": "SteppableClock",
     "PhysicsEngineName":"ExternalPhysicsEngine",
     "OriginGeopoint": {
-      "Latitude": 33.44018,
-      "Longitude": -88.84567
+      "Latitude": 33.440655,
+      "Longitude": -88.848829
     },
     "Vehicles": {
     "SimpleFlight": {
@@ -22,8 +22,8 @@
     "Parameters": {
       "NAV_RCL_ACT": 0,
       "NAV_DLL_ACT": 0,
-      "LPE_LAT": 33.44018,
-      "LPE_LON": -88.84567,
+      "LPE_LAT": 33.440655,
+      "LPE_LON": -88.848829,
       "COM_RC_IN_MODE": 1
     }
     }

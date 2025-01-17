@@ -24,7 +24,9 @@ SOAR is a fork of [AirSim](https://github.com/microsoft/AirSim) and port to UE 5
 3. [![Research Background](https://img.shields.io/badge/Research_Background-lightgreen?style=flat&logo)](#research-background)
 4. [![SOAR Build Tutorial](https://img.shields.io/badge/SOAR_Build_Tutorial-lightgreen?style=flat&logo)](#soar-build-tutorial)
 5. [![Miscellaneous Build Tutorials](https://img.shields.io/badge/Miscellaneuos_Build_Tutorial-lightgreen?style=flat&logo)](#miscellaneuos-build-tutorial)
-6. [![Contact Information](https://img.shields.io/badge/Contact_Info-lightgreen?style=flat&logo)](#contact-info)
+6. [![Project Structure](https://img.shields.io/badge/Project_Structure-lightgreen?style=flat&logo)](#miscellaneuos-build-tutorial)
+7. [![Additional Project Information](https://img.shields.io/badge/Additional_Project_Information-lightgreen?style=flat&logo)](#miscellaneuos-build-tutorial)
+8. [![Contact Information](https://img.shields.io/badge/Contact_Info-lightgreen?style=flat&logo)](#contact-info)
 
 ## Notes
 ## Unreal Engine Version
@@ -129,6 +131,12 @@ This is the exact structure of our testing environments, and consequently, the f
 │   ├── QGC/
 │      └── QGroundControl.AppImage
 ```
+
+## Additional Project Information
+
+In our version of the AirSim project, we have included some modfications to the AirSim vehicles, specifically the flying pawn. We left our modified vehicles in `SOAR/Unreal/Environments/Blocks/RFRLFlyingPawns` Once you have created the AirSim plugin and dropped it into the Blocks project you can overwrite the files in the folder: `SOAR/Unreal/Environments/Blocks/Plugins/AirSim/Source/Vehicles/Multirotor/` with the files (EXCLUDING THE BP_FlyingPawn.uasset FILE) in the RFRLFlyingPawn folder. Additionally, you will have to take the BP_FlyingPawn.uasset and overwrite the file in `SOAR/Unreal/Environments/Blocks/Plugins/AirSim/Content/Blueprints` with it. Note, the simulator will run fine without these custom files, but you will have to implement your own socket functionality for connecting to external programs.
+
+If you compile this project manually without using the start_sim.sh script, you will need to copy the settings.json file into your `Documents/AirSim/` folder, otherwise, AirSim will create this folder itself, and it will run the default settings.
 
 ## Contact Information
 

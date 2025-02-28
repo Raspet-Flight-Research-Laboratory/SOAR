@@ -39,7 +39,7 @@ Everything in the SOAR project was built and tested on Ubuntu version 20.04. The
 
 ## Introduction
 
-### NOTE: Skip to ![section 3](#soar-build-tutorial) for build instructions...
+### NOTE: Skip to ![Section 3](#SOAR-Build-Tutorial) for build instructions...
 
 SOAR is a simulator for aerial research, built on [Unreal Engine](https://www.unrealengine.com/). It is open-source and supports software-in-the-loop simulation with popular flight controllers such as PX4 & ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment.
 
@@ -62,20 +62,22 @@ By focusing on these aspects, SOAR aims to provide a comprehensive platform for 
 
 ## SOAR Build Tutorial
 
-This section of the README give full comprehensive instructions for building the project on Ubuntu and Windows. Additionally, this section details significant errors that the RFRL team faced when building the Colosseum project.
+This section of the README give full comprehensive instructions for building the project on Ubuntu. Additionally, this section details significant errors that the RFRL team faced when building the Colosseum project.
 
 ### Ubuntu
-- clone this project: `git clone git@github.com:Raspet-Flight-Research-Laboratory/SOAR.git`
-- cd into the project directory and run: `chmod +x *.sh`
-- cd into `(SOAR directory)/Unreal/Environments/Blocks` and run: `chmod +x *.sh`
-- cd back into the project directory and run: `./setup.sh` -> This will begin downloading all the project dependecies.
-- Once the downloads are done, run: `./build.sh` -> This will create the folder `(SOAR directory)/Unreal/Plugins`, you can move this folder into any project you want. For this tutorial we use the default Blocks project.
-- Once this is done, you can copy the Plugins folder into `(SOAR directory)/Unreal/Environments/Blocks` -> otherwise, if you are using a custom Unreal project, there is a tutorial on how to use AirSim for custom projects [here](https://microsoft.github.io/AirSim/unreal_custenv/), albeit outdated.
-- Now the project is ready to run in Unreal
-### Before going any farther, make sure you have Unreal and CesiumForUnreal installed, (see the Unreal and Cesium For Unreal subsections).
+- Make a new directory `~/repos` and cd into that directory with the command: `mkdir ~/repos && cd ~/repos`
+- Clone this project: `git clone git@github.com:Raspet-Flight-Research-Laboratory/SOAR.git`
+- Make sure the current branch is Colosseum by running `git checkout`, if not, run `git checkout Colosseum`.
+- Run: `chmod +x *.sh`
+- Cd into `~/repos/Unreal/Environments/Blocks` and run: `chmod +x *.sh`
+- Cd back into the project directory and run: `./setup.sh` -> This will begin downloading all the project dependecies.
+- Once the downloads are done, run: `./build.sh` -> This will create the folder `~/repos/Unreal/Plugins`, you can move this folder into any project you want. For this tutorial we use the default Blocks project.
+- Once this is done, you can copy the Plugins folder into `~/repos/Unreal/Environments/Blocks` -> otherwise, if you are using a custom Unreal project, there is a tutorial on how to use AirSim for custom projects [here](https://microsoft.github.io/AirSim/unreal_custenv/), albeit outdated.
+- ### Before going any farther, make sure you have Unreal and CesiumForUnreal installed, (see the Unreal and Cesium For Unreal subsections).
 - From the SOAR directory, start your project with the command: `./start_sim.sh` -> YOU MAY NEED TO OPEN THIS SCRIPT AND CHANGE THE PATHS TO THE LOCATIONS OF UNREAL AND THE SOAR PROJECT ON YOUR MACHINE.
 - The Unreal Editor will tell you that the Blocks and AirSim modules are missing or created with a different engine version, and it will ask you if you want to compile from source, click yes.
 - This should compile and start the project.
+- Once the project is open in Unreal, you can click the green arrow to start the simulation.
 
 ### Unreal
 
@@ -84,7 +86,9 @@ This section of the README give full comprehensive instructions for building the
 ### Cesium For Unreal
 
 - To get the Cesium For Unreal plugin working on Ubuntu, you will have to download the pre-compiled version from [this site](https://github.com/CesiumGS/cesium-unreal/releases) and unzip it into `(SOAR directory)/Unreal/Environments/Blocks/Plugins` -> This is the same directory that you put the AirSim plugin into.
-- You will need an access token which can be easily obtained by making an acount with Cesium and generating one using [their website](https://cesium.com/learn/ion/cesium-ion-access-tokens/).
+- When we built this project, we used Unreal 5.3.2 and we used Cesium version 2.10.0.
+- You will need an access token which can be easily obtained by making an acount with Cesium and generating one using [their website](https://cesium.com/learn/ion/cesium-ion-access-tokens/) **The default token can be used**.
+- You will be asked for a Cesium token when you run the SOAR project in Unreal...
 - The Cesium plugin is now usable.
 
 
